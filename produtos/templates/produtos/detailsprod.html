@@ -1,0 +1,22 @@
+{%extends 'base.html' %}
+{% block context %}
+
+<main class="container">
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                {{prod.name}}
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="pt-2 pb-4 display-5 link-body-emphasis mb-1"> <img src="{{prod.image_url}}" alt=""
+                        width="50%" height="200"></h2>
+
+                <p>{{ prod.price }}</p>
+
+                <p> {{prod.description}}</p>
+                <hr>
+        </div>
+    </div>
+</main>
+{% endblock %}
